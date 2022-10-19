@@ -1,0 +1,25 @@
+.reviews__list {
+  padding: 0 100px;
+}
+
+.reviews__item {
+  clear: both;
+}
+
+.reviews__author {
+  float: left;
+  margin-right: 20px;
+  margin-bottom: 50px;
+}
+
+.reviews__photo {
+  width: 280px;
+}
+
+.reviews__name {
+  text-align: center;
+}
+
+.reviews__review-text {
+  padding-top: 52px;
+}
