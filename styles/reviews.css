@@ -3,17 +3,17 @@
 }
 
 .reviews__item {
-  clear: both;
+  display: flex;
+  margin-bottom: 50px;
+  gap: 20px;
 }
 
-.reviews__author {
-  float: left;
-  margin-right: 20px;
-  margin-bottom: 50px;
+.reviews__item:last-child {
+  margin-bottom: 0;
 }
 
 .reviews__photo {
-  width: 280px;
+  min-width: 280px;
 }
 
 .reviews__name {

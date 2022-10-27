@@ -39,6 +39,7 @@
 .banner__list {
   display: flex;
   align-items: flex-end;
+  margin-bottom: 150px;
   gap: 40px;
 }
 
@@ -67,4 +68,20 @@
   font-weight: 400;
   font-size: 30px;
   line-height: 34px;
+}
+
+.banner__button {
+  padding: 25px 69px;
+  background-color: #6C0287;
+}
+
+.banner__next {
+  position: absolute;
+  height: 97px;
+  width: 97px;
+  left: 541px;
+  bottom: 90px;
+  z-index: 10;
+  background-image: url('../img/down.svg');
+  border-radius: 50%;
 }
