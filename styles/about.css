@@ -1,11 +1,10 @@
-.about__photos {
-  float: left;
-  max-width: 100%;
-  min-width: 600px;
+.about__content {
+  display: flex;
+  gap: 80px;
 }
 
-.about__info {
-  padding-left: 680px;
+.about__photos {
+  min-width: 600px;
 }
 
 .about__paragraph {
