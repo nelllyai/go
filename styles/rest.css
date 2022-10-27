@@ -1,0 +1,36 @@
+.rest__list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 40px 20px;
+}
+
+.rest__item {
+  padding: 166px 40px 0;
+  height: 228px;
+  flex-basis: 380px;
+  font-weight: 700;
+}
+
+.rest__item_vr {
+  background-image: url('../img/vr.jpg');
+}
+
+.rest__item_audio {
+  background-image: url('../img/audio.jpg');
+}
+
+.rest__item_karaoke {
+  background-image: url('../img/karaoke.jpg');
+}
+
+.rest__item_boardgames {
+  background-image: url('../img/boardgames.jpg');
+}
+
+.rest__item_movies {
+  background-image: url('../img/movies.jpg');
+}
+
+.rest__item_playstation {
+  background-image: url('../img/playstation.jpg');
+}

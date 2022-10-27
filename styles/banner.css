@@ -1,0 +1,33 @@
+.banner {
+  padding-top: 25px;
+}
+
+.banner__content {
+  position: relative;
+  min-height: 823px;
+}
+
+.banner__content::after {
+  content: "";
+  display: block;
+  position: absolute;
+  width: 675px;
+  height: 762px;
+  bottom: 0;
+  right: 0;
+  background-image: url("../img/vr-man.png");
+  background-size: contain;
+}
+
+.banner__title {
+  font-size: 150px;
+  font-weight: 900;
+  line-height: 100%;
+  letter-spacing: -0.1em;
+}
+
+.banner__tagline {
+  padding-left: 100px;
+  font-size: 28px;
+  line-height: 50px;
+}

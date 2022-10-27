@@ -11,14 +11,59 @@
 <body>
   <header class="section header">
     <div class="container header__container">
-      <h1 class="header__title">GAME OVER</h1>
-      <span class="header__tagline">Новый формат игр и отдыха</span>
+      <img class="header__logo" src="img/logo.svg" alt="Логотип GO">
+
+      <nav class="navigation">
+        <ul class="navigation__list">
+          <li class="navigation__item">
+            <a class="navigation__link" href="#rooms">залы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#about">О нас</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#booking">Бронь</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#reviews">отзывы</a>
+          </li>
+          <li class="navigation__item">
+            <a class="navigation__link" href="#footer">Контакты</a>
+          </li>
+        </ul>
+      </nav>
+
+      <button class="header__button">Заказать звонок</button>
     </div>
   </header>
 
   <main class="main">
-    <div class="container">
-      <section class="section rooms">
+    <section class="section banner">
+      <div class="container">
+        <div class="banner__content">
+          <h1 class="banner__title">GAME OVER</h1>
+          <span class="banner__tagline">Новый формат игр и отдыха</span>
+        </div>
+      </div>
+    </section>
+
+    <section class="section rest">
+      <div class="container">
+        <h2 class="subtitle rest__title" id="rest">У нас есть все для классного отдыха с друзьями!</h2>
+
+        <ul class="rest__list">
+          <li class="rest__item rest__item_vr">VR очки</li>
+          <li class="rest__item rest__item_audio">Аудио-система 5.1 с отличным звуком</li>
+          <li class="rest__item rest__item_karaoke">Караоке (4 микрофона)</li>
+          <li class="rest__item rest__item_boardgames">Настольные игры</li>
+          <li class="rest__item rest__item_movies">Кино сервисы Netflix, IVI, MegoGo, КиноПоиск, Okko</li>
+          <li class="rest__item rest__item_playstation">РlаyStаtiоn 5</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="section rooms">
+      <div class="container">
         <h2 class="subtitle rooms__title" id="rooms">Наши залы</h2>
 
         <ul class="rooms__list">
@@ -35,10 +80,12 @@
             <a class="rooms__link" href="#">neon style</a>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="section booking">
-        <h2 class="subtitle booking__title" id="booking">Забронировать</h2>
+    <section class="section booking">
+      <div class="container">
+        <h2 class="subtitle booking__title" id="booking">Забронировать зал просто</h2>
 
         <form class="booking__form" action="https://jsonplaceholder.typicode.com/posts" method="post">
           <fieldset class="booking__fieldset">
@@ -162,9 +209,11 @@
             Согласен на обработку данных
           </label>
         </form>
-      </section>
+      </div>
+    </section>
 
-      <section class="section about">
+    <section class="section about">
+      <div class="container">
         <h2 class="subtitle about__title" id="about">О нас</h2>
 
         <img class="about__photos" src="img/about-photos.jpg" alt="Коллаж из фотографий мероприятий">
@@ -195,9 +244,11 @@
             </figure>
           </blockquote>
         </div>
-      </section>
+      </div>
+    </section>
 
-      <section class="section reviews">
+    <section class="section reviews">
+      <div class="container">
         <h2 class="subtitle reviews__title" id="reviews">Отзывы посетителей</h2>
 
         <ul class="reviews__list">
@@ -207,7 +258,8 @@
               <div class="reviews__name">Макс Самойлов</div>
             </div>
             <p class="reviews__review-text">
-              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда еще я не был в таком полном игровом погружении. Сервис на высоте!
+              Отмечали здесь день рождения с компанией друзей, все было очень круто! VR очки это просто бомба, никогда
+              еще я не был в таком полном игровом погружении. Сервис на высоте!
             </p>
           </li>
 
@@ -221,20 +273,23 @@
               больше нет подобных заведений
             </p>
           </li>
-          
+
           <li class="reviews__item">
             <div class="reviews__author">
               <img class="reviews__photo" src="img/nikita-yaschenko.png" alt="Фотография Никиты Ященко">
               <div class="reviews__name">Никита Ященко</div>
             </div>
             <p class="reviews__review-text">
-              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал в атмосферу космоса
+              Немного подвисала игра в VR очках, а так все норм. Крутое оформление комнаты в стиле звездных войн, попал
+              в атмосферу космоса
             </p>
           </li>
         </ul>
-      </section>
+      </div>
+    </section>
 
-      <section class="section faq">
+    <section class="section faq">
+      <div class="container">
         <h2 class="subtitle faq__title" id="faq">Частые вопросы</h2>
 
         <ul class="faq__list">
@@ -244,8 +299,8 @@
           <li class="faq__item">Как получить VIP карту?</li>
           <li class="faq__item">Какая комната самая популярная?</li>
         </ul>
-      </section>
-    </div>
+      </div>
+    </section>
   </main>
 
   <footer class="section footer">

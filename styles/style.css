@@ -1,9 +1,12 @@
 @import "normalize.css";
 @import "default.css";
 @import "container.css";
+@import "navigation.css";
 @import "section.css";
 @import "subtitle.css";
 @import "header.css";
+@import "banner.css";
+@import "rest.css";
 @import "main.css";
 @import "rooms.css";
 @import "booking.css";
