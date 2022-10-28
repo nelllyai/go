@@ -30,6 +30,22 @@
   color: #fff;
 }
 
+.faq__item:hover::after {
+  background-image: url('../img/open-purple-hover.svg');
+}
+
+.faq__item:active::after {
+  background-image: url('../img/open-purple-active.svg');
+}
+
 .faq__item:nth-child(even)::after {
   background-image: url("../img/open-white.svg");
+}
+
+.faq__item:nth-child(even):hover::after {
+  background-image: url("../img/open-white-hover.svg");
+}
+
+.faq__item:nth-child(even):active::after {
+  background-image: url("../img/open-white-active.svg");
 }

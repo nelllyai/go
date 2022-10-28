@@ -91,10 +91,20 @@
   left: 541px;
   bottom: 90px;
   z-index: 10;
-  background-image: url('../img/down.svg');
   border-radius: 50%;
+  background-image: url('../img/down.svg');
+}
+
+.banner__next:hover {
+  background-image: url('../img/down-hover.svg');
 }
 
 .banner__next:focus {
   outline: 2px solid #CD06FF;
+  outline-offset: 3px;
+}
+
+.banner__next:active {
+  outline: none;
+  background-image: url('../img/down-active.svg');
 }

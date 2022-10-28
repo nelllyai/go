@@ -1,6 +1,7 @@
 .footer {
   padding-top: 78px;
   padding-bottom: 10px;
+  background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
 
 .footer__container {
