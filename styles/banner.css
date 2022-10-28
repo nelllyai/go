@@ -75,6 +75,15 @@
   background-color: #6C0287;
 }
 
+.banner__button:hover,
+.banner__button:focus {
+  background-color: #840AA3;
+}
+
+.banner__button:active {
+  background-color: #640AA3;
+}
+
 .banner__next {
   position: absolute;
   height: 97px;

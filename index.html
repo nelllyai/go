@@ -105,20 +105,10 @@
           <fieldset class="booking__fieldset booking__room-fieldset">
             <legend class="booking__legend">Выбери зал</legend>
 
-            <label class="booking__button-label">
-              <input class="booking__input booking__input_no-radio" type="radio" name="room" value="80's vibes"
-                required>80's vibes
-            </label>
-            <label class="booking__button-label">
-              <input class="booking__input booking__input_no-radio" type="radio" name="room" value="star wars">Star Wars
-            </label>
-            <label class="booking__button-label">
-              <input class="booking__input booking__input_no-radio" type="radio" name="room" value="wild west">Wild West
-            </label>
-            <label class="booking__button-label">
-              <input class="booking__input booking__input_no-radio" type="radio" name="room" value="neon style">Neon
-              Style
-            </label>
+            <button class="button booking__button-label" type="button">80’s vibes</button>
+            <button class="button booking__button-label" type="button">Star wars</button>
+            <button class="button booking__button-label" type="button">wild west</button>
+            <button class="button booking__button-label" type="button">neon style</button>
           </fieldset>
 
           <div class="booking__center-fieldsets">
@@ -130,21 +120,20 @@
 
                 <div class="booking__list">
                   <label class="booking__label">
-                    <input class="booking__input booking__input_radio" type="radio" name="console" value="playstation"
+                    <input class="booking__input booking__radio" type="radio" name="console" value="playstation"
                       required>
                     Play Station
                   </label>
                   <label class="booking__label">
-                    <input class="booking__input booking__input_radio" type="radio" name="console"
-                      value="sega mega drive">
+                    <input class="booking__input booking__radio" type="radio" name="console" value="sega mega drive">
                     Sega Mega Drive
                   </label>
                   <label class="booking__label">
-                    <input class="booking__input booking__input_radio" type="radio" name="console" value="xbox one s">
+                    <input class="booking__input booking__radio" type="radio" name="console" value="xbox one s">
                     X-box One S
                   </label>
                   <label class="booking__label">
-                    <input class="booking__input booking__input_radio" type="radio" name="console" value="dendy">
+                    <input class="booking__input booking__radio" type="radio" name="console" value="dendy">
                     Dendy
                   </label>
                 </div>
@@ -155,23 +144,19 @@
 
                 <div class="booking__list">
                   <label class="booking__label">
-                    <input class="booking__input booking__input_checkbox" type="checkbox" name="boardgames"
-                      value="jenga">
+                    <input class="booking__input booking__checkbox" type="checkbox" name="boardgames" value="jenga">
                     Jenga
                   </label>
                   <label class="booking__label">
-                    <input class="booking__input booking__input_checkbox" type="checkbox" name="boardgames"
-                      value="monopoly">
+                    <input class="booking__input booking__checkbox" type="checkbox" name="boardgames" value="monopoly">
                     Monopoly
                   </label>
                   <label class="booking__label">
-                    <input class="booking__input booking__input_checkbox" type="checkbox" name="boardgames"
-                      value="munchkin">
+                    <input class="booking__input booking__checkbox" type="checkbox" name="boardgames" value="munchkin">
                     Манчкин
                   </label>
                   <label class="booking__label">
-                    <input class="booking__input booking__input_checkbox" type="checkbox" name="boardgames"
-                      value="alias">
+                    <input class="booking__input booking__checkbox" type="checkbox" name="boardgames" value="alias">
                     Alias
                   </label>
                 </div>
@@ -182,11 +167,11 @@
 
                 <div class="booking__list">
                   <label class="booking__label">
-                    <input class="booking__input booking__input_checkbox" type="checkbox" name="extras" value="karaoke">
+                    <input class="booking__input booking__checkbox" type="checkbox" name="extras" value="karaoke">
                     Караоке
                   </label>
                   <label class="booking__label">
-                    <input class="booking__input booking__input_checkbox" type="checkbox" name="extras" value="vr">
+                    <input class="booking__input booking__checkbox" type="checkbox" name="extras" value="vr">
                     VR
                   </label>
                 </div>
@@ -198,44 +183,49 @@
               <legend class="booking__legend">Выбери дату и время</legend>
 
               <div class="booking__block booking__block_row">
-                <label class="booking__label">
-                  <span class="booking__inside-label">Дата</span>
-                  <input class="booking__input booking__input_text booking__date-time" type="date" name="date" required>
-                </label>
+                <select class="booking__select" name="date" required>
+                  <option class="booking__option" value="" selected disabled>Дата</option>
+                  <option class="booking__option" value="01-11-22">1 ноября 2022 года</option>
+                  <option class="booking__option" value="04-11-22">4 ноября 2022 года</option>
+                  <option class="booking__option" value="06-11-22">6 ноября 2022 года</option>
+                </select>
 
-                <label class="booking__label">
-                  <span class="booking__inside-label">Время</span>
-                  <input class="booking__input booking__input_text booking__date-time" type="time" name="time" required>
-                </label>
+                <select class="booking__select" name="time" required>
+                  <option class="booking__option" value="" selected disabled>Время</option>
+                  <option class="booking__option" value="12-30">12:30</option>
+                  <option class="booking__option" value="16-00">16:00</option>
+                  <option class="booking__option" value="19-30">19:30</option>
+                </select>
 
-                <label class="booking__label">
-                  <span class="booking__inside-label">Сколько человек</span>
-                  <input class="booking__input booking__input_text booking__visitors" type="number" name="visitors"
-                    required>
-                </label>
+                <select class="booking__select booking__select_big" name="visitors" required>
+                  <option class="booking__option" value="" selected disabled>Сколько человек</option>
+                  <option class="booking__option" value="1">Один человек</option>
+                  <option class="booking__option" value="2">Два человека</option>
+                  <option class="booking__option" value="3">Три человека</option>
+                </select>
               </div>
 
               <div class="booking__block">
                 <label class="booking__label">
                   <span class="booking__final-label">Имя</span>
-                  <input class="booking__input booking__input_text" type="text" name="name" required>
+                  <input class="booking__input booking__input-text" type="text" name="name" required>
                 </label>
 
                 <label class="booking__label">
                   <span class="booking__final-label">Фамилия</span>
-                  <input class="booking__input booking__input_text" type="text" name="surname" required>
+                  <input class="booking__input booking__input-text" type="text" name="surname" required>
                 </label>
               </div>
 
               <div class="booking__block">
                 <label class="booking__label">
                   <span class="booking__final-label">Телефон</span>
-                  <input class="booking__input booking__input_text" type="tel" name="phone" required>
+                  <input class="booking__input booking__input-text" type="tel" name="phone" required>
                 </label>
 
                 <label class="booking__label">
                   <span class="booking__final-label">E-mail</span>
-                  <input class="booking__input booking__input_text" type="email" name="email" required>
+                  <input class="booking__input booking__input-text" type="email" name="email" required>
                 </label>
               </div>
 
@@ -401,6 +391,14 @@
       </div>
     </div>
   </footer>
+
+  <script>
+    document.addEventListener('click', event => {
+      if (event.target.matches('button')) {
+        event.target.focus()
+      }
+    })
+  </script>
 </body>
 
 </html>
