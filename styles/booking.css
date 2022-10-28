@@ -1,7 +1,156 @@
+.booking {
+  padding-top: 80px;
+  padding-bottom: 80px;
+  background-color: #440F51;
+}
+
 .booking__title {
   margin-bottom: 50px;
 }
 
 .booking__form {
-  font-size: 16px;
+  font-size: 22px;
+  line-height: 25px;
+}
+
+.booking__fieldset {
+  display: flex;
+  justify-content: space-around;
+  margin-bottom: 60px;
+}
+
+.booking__fieldset:last-child {
+  margin-bottom: 40px;
+}
+
+.booking__room-fieldset {
+  justify-content: space-between;
+}
+
+.booking__legend {
+  margin-bottom: 40px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  text-align: center;
+}
+
+.booking__button-label {
+  flex-basis: 250px;
+  padding: 8px 0px;
+  background-color: #fff;
+  border-radius: 10px;
+  font-weight: 700;
+  font-size: 30px;
+  line-height: 40px;
+  color: #000000;
+  text-transform: uppercase;
+  text-align: center;
+  cursor: pointer;
+}
+
+.booking__input_no-radio {
+  margin-left: -13px;
+  visibility: hidden;
+}
+
+.booking__center-fieldsets {
+  display: flex;
+  flex-direction: column;
+  padding: 0 100px;
+}
+
+.booking__fun-fieldset {
+  flex-direction: column;
+}
+
+.booking__sublegend {
+  margin-bottom: 23px;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+}
+
+.booking__list {
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+.booking__input_radio {
+  margin-right: 12px;
+  width: 27px;
+  height: 27px;
+}
+
+.booking__input_checkbox {
+  margin-right: 12px;
+  width: 25px;
+  height: 25px;
+}
+
+.booking__final {
+  justify-content: space-between;
+  align-items: flex-end;
+}
+
+.booking__block {
+  display: flex;
+  flex-direction: column;
+  gap: 14px;
+}
+
+.booking__block_row {
+  flex-basis: 300px;
+  flex-direction: row;
+  flex-wrap: wrap;
+  column-gap: 32px;
+}
+
+.booking__inside-label {
+  position: relative;
+  top: 40px;
+  left: 20px;
+  font-size: 18px;
+  line-height: 28px;
+  color: #211E1E;
+}
+
+.booking__final-label {
+  margin-bottom: 6px;
+  font-weight: 700;
+  font-size: 14px;
+  line-height: 16px;
+}
+
+.booking__input_text {
+  display: block;
+  height: 52px;
+}
+
+.booking__date-time {
+  width: 134px;
+}
+
+.booking__visitors {
+  width: 300px;
+}
+
+.booking__date-time::after {
+  content: "";
+  position: relative;
+  left: -27px;
+  width: 21px;
+  height: 15px;
+  background-image: url("../img/down-arrow.svg");
+  background-position: center;
+  background-repeat: no-repeat;
+}
+
+.booking__button {
+  align-self: flex-end;
+  padding: 16px 50px;
+  width: 300px;
+  background-color: #fff;
+  color: #6C0287;
 }
