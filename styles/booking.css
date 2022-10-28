@@ -55,7 +55,7 @@
 .booking__button-label:focus {
   border-color: #640AA3;
   background-color: #fff;
-  color: #640AA3;
+  color: black;
 }
 
 .booking__button-label:active {
@@ -102,6 +102,11 @@
   height: 25px;
 }
 
+.booking__radio:focus,
+.booking__checkbox:focus {
+  outline: 1px solid #CD06FF;
+}
+
 .booking__final {
   justify-content: space-between;
   align-items: flex-end;
@@ -131,6 +136,11 @@
 .booking__input-text {
   display: block;
   height: 52px;
+  border: 2px solid transparent;
+}
+
+.booking__input-text:focus {
+  border-color: #CD06FF;
 }
 
 .booking__select {
@@ -142,21 +152,26 @@
   width: 100%;
 }
 
-.booking__date-time::after {
-  content: "";
-  position: relative;
-  left: -27px;
-  width: 21px;
-  height: 15px;
-  background-image: url("../img/down-arrow.svg");
-  background-position: center;
-  background-repeat: no-repeat;
-}
-
 .booking__button {
   align-self: flex-end;
   padding: 16px 50px;
   width: 300px;
+  border: 3px solid transparent;
   background-color: #fff;
   color: #6C0287;
+}
+
+.booking__button:hover {
+  border-color: #6C0287;
+  background-color: #EADEED;
+}
+
+.booking__button:focus {
+  border-color: #6C0287;
+  background-color: #fff;
+}
+
+.booking__button:active {
+  border-color: transparent;
+  background-color: #EADEED;
 }

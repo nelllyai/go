@@ -76,3 +76,20 @@ input[type="date"]::-webkit-datetime-edit,
 input[type="time"]::-webkit-datetime-edit {
   color: transparent; 
 }
+
+input, textarea {
+  outline:none;
+}
+
+input:active,
+input:focus {
+  outline:none;
+}
+
+button:active, button:focus {
+  outline: none;
+}
+
+button::-moz-focus-inner {
+  border: 0;
+}

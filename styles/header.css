@@ -19,7 +19,7 @@
   flex-basis: 280px;
   padding: 12px 0;
   border: 3px solid #CD06FF;
-  background-color: inherit;
+  background-color: transparent;
 }
 
 .header__button:hover,

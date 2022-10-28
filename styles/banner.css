@@ -94,3 +94,7 @@
   background-image: url('../img/down.svg');
   border-radius: 50%;
 }
+
+.banner__next:focus {
+  outline: 2px solid #CD06FF;
+}
