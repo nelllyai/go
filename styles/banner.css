@@ -93,9 +93,14 @@
   z-index: 10;
   border-radius: 50%;
   background-image: url('../img/down.svg');
+  outline: 6px solid transparent;
+  outline-offset: 10px;
+  transition-duration: .3s;
+  transition-property: background-image, outline;
 }
 
 .banner__next:hover {
+  outline-color: transparent;
   background-image: url('../img/down-hover.svg');
 }
 
@@ -105,6 +110,6 @@
 }
 
 .banner__next:active {
-  outline: none;
+  outline-color: transparent;
   background-image: url('../img/down-active.svg');
 }

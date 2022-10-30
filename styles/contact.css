@@ -74,6 +74,8 @@
   outline: 1px solid transparent;
   outline-offset: 3px;
   color: white;
+  transition-duration: 0.3s;
+  transition-property: color, outline-color;
 }
 
 .contact__media-link:hover {

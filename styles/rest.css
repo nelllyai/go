@@ -9,6 +9,11 @@
   height: 228px;
   flex-basis: 380px;
   font-weight: 700;
+  transition: scale .3s;
+}
+
+.rest__item:hover {
+  scale: 1.1;
 }
 
 .rest__item_vr {

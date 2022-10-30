@@ -90,6 +90,8 @@
 .booking__radio,
 .booking__checkbox {
   margin-right: 12px;
+  transition-duration: 0.3s;
+  transition-property: outline;
 }
 
 .booking__radio {
@@ -137,6 +139,7 @@
   display: block;
   height: 52px;
   border: 2px solid transparent;
+  transition: border-color 0.2s;
 }
 
 .booking__input-text:focus {

@@ -23,6 +23,8 @@
   top: calc(50% - 20px);
   background-image: url("../img/open-purple.svg");
   background-size: contain;
+  transition-duration: .2s;
+  transition-property: background-image;
 }
 
 .faq__item:nth-child(even) {
