@@ -79,15 +79,15 @@
 }
 
 .contact__media-link:hover {
-  color: #EADEED;
+  color: var(--pale-color);
 }
 
 .contact__media-link:focus {
-  outline-color: #CD06FF;
-  color: #EADEED;
+  outline-color: var(--light-color);
+  color: var(--pale-color);
 }
 
 .contact__media-link:active {
   outline-color: transparent;
-  color: #CD06FF;
+  color: var(--light-color);
 }

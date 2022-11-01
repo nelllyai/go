@@ -37,7 +37,7 @@
   top: -10px;
   left: 0;
   font-weight: 900;
-  color: #6C0287;
+  color: var(--main-color);
 }
 
 .about__quote-text::after {
@@ -45,7 +45,7 @@
   position: absolute;
   right: 110px;
   font-weight: 900;
-  color: #6C0287;
+  color: var(--main-color);
 }
 
 .about__figure {

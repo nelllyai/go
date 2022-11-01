@@ -18,17 +18,17 @@
 .header__button {
   flex-basis: 280px;
   padding: 12px 0;
-  border: 3px solid #CD06FF;
+  border: 3px solid var(--light-color);
   background-color: transparent;
 }
 
 .header__button:hover,
 .header__button:focus {
   border: none;
-  background-color: #6C0287;
+  background-color: var(--main-color);
 }
 
 .header__button:active {
   border: 1px solid #000;
-  background-color: #640AA3;
+  background-color: var(--average-color);
 }
