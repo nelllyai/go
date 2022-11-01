@@ -1,3 +1,8 @@
+.rest {
+  --central-offset: 70px;
+  padding-bottom: calc(50px + var(--central-offset));
+}
+
 .rest__list {
   display: flex;
   flex-wrap: wrap;
@@ -10,6 +15,10 @@
   flex-basis: 380px;
   font-weight: 700;
   transition: scale .3s;
+}
+
+.rest__item:nth-child(3n + 2) {
+  transform: translateY(var(--central-offset));
 }
 
 .rest__item:hover {
