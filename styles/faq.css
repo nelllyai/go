@@ -1,3 +1,7 @@
+.faq__title {
+  margin-bottom: 47px;
+}
+
 .faq__item {
   position: relative;
   padding: 30px 70px;
@@ -17,10 +21,10 @@
   content: "";
   display: inline-block;
   position: absolute;
-  width: 40px;
-  height: 40px;
-  right: calc(10% - 20px);
-  top: calc(50% - 20px);
+  width: 48px;
+  height: 48px;
+  right: calc(8% - 24px);
+  top: calc(50% - 24px);
   background-image: url("../img/open-purple.svg");
   background-size: contain;
   transition-duration: .2s;

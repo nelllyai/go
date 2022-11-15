@@ -22,7 +22,7 @@
 }
 
 .contact__item:first-child {
-  margin-bottom: 38px;
+  margin-bottom: 46px;
 }
 
 .contact__item::before {
@@ -30,7 +30,8 @@
   position: absolute;
   width: 35px;
   height: 32px;
-  left: -60px;
+  top: calc(50% - 16px);
+  left: -65px;
   background-repeat: no-repeat;
 }
 
@@ -59,7 +60,7 @@
   display: inline-block;
   width: 48px;
   height: 48px;
-  margin-right: 27px;
+  margin-right: 23px;
 }
 
 .contact__media:last-of-type {

@@ -9,12 +9,6 @@
   align-items: center;
 }
 
-.navigation__list {
-  display: flex;
-  justify-content: space-between;
-  gap: 40px;
-}
-
 .header__button {
   flex-basis: 280px;
   padding: 12px 0;

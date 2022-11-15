@@ -1,3 +1,9 @@
+.navigation__list {
+  display: flex;
+  justify-content: space-between;
+  gap: 40px;
+}
+
 .navigation__link {
   font-size: 22px;
   line-height: 50px;

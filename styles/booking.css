@@ -23,21 +23,25 @@
   margin-bottom: 40px;
 }
 
-.booking__room-fieldset {
+.booking__fieldset_room {
   justify-content: space-between;
 }
 
 .booking__legend {
-  margin-bottom: 40px;
+  margin-bottom: 39px;
   font-weight: 700;
   font-size: 24px;
   line-height: 28px;
   text-align: center;
 }
 
+.booking__legend_small-margin {
+  margin-bottom: 28px;
+}
+
 .booking__button-label {
   flex-basis: 250px;
-  padding: 8px 0px;
+  padding: 5px 0px;
   border: 3px solid transparent;
   background-color: #fff;
   border-radius: 10px;
@@ -64,14 +68,25 @@
   color: white;
 }
 
-.booking__center-fieldsets {
+.booking__fieldsets {
   display: flex;
   flex-direction: column;
-  padding: 0 100px;
+  margin: 0 auto;
+  max-width: 980px;
 }
 
-.booking__fun-fieldset {
-  flex-direction: column;
+.booking__label_center {
+  display: flex;
+  align-items: center;
+}
+
+.booking__fieldset_fun {
+  justify-content: space-between;
+}
+
+.booking__fieldset_subfieldset {
+  justify-content: flex-start;
+  margin-bottom: 0;
 }
 
 .booking__sublegend {
@@ -109,9 +124,10 @@
   outline: 1px solid var(--light-color);
 }
 
-.booking__final {
+.booking__fieldset_final {
   justify-content: space-between;
   align-items: flex-end;
+  margin-bottom: 40px;
   gap: 40px;
 }
 
@@ -129,14 +145,13 @@
 }
 
 .booking__final-label {
-  margin-bottom: 6px;
   font-weight: 700;
   font-size: 14px;
-  line-height: 16px;
 }
 
 .booking__input-text {
   display: block;
+  width: 280px;
   height: 52px;
   border: 2px solid transparent;
   transition: border-color 0.2s;
@@ -147,6 +162,7 @@
 }
 
 .booking__select {
+  padding: 12px 20px;
   width: 134px;
   height: 52px;
 }
@@ -156,17 +172,22 @@
 }
 
 .booking__button {
+  position: relative;
   align-self: flex-end;
-  padding: 16px 50px;
+  z-index: 2;
+  padding: 11px 50px;
   width: 300px;
+  height: 60px;
   border: 3px solid transparent;
   background-color: #fff;
   color: var(--main-color);
+  filter: drop-shadow(0 0 10px #fff);
 }
 
 .booking__button:hover {
   border-color: var(--main-color);
   background-color: var(--pale-color);
+  filter: none;
 }
 
 .booking__button:focus {

@@ -3,6 +3,10 @@
   padding-bottom: calc(50px + var(--central-offset));
 }
 
+.rest__title {
+  margin-bottom: 45px;
+}
+
 .rest__list {
   display: flex;
   flex-wrap: wrap;

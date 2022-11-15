@@ -1,3 +1,11 @@
+.about {
+  padding-top: 100px;
+}
+
+.about__title {
+  margin-bottom: 45px;
+}
+
 .about__content {
   display: flex;
   gap: 80px;
@@ -8,11 +16,12 @@
 }
 
 .about__paragraph {
-  margin-bottom: 50px;
+  margin-bottom: 7px;
 }
 
 .about__text {
-  margin-bottom: 35px;
+  margin-bottom: 30px;
+  white-space: pre-line;
 }
 
 .about__text:last-child {
@@ -25,7 +34,7 @@
 
 .about__quote-text {
   padding: 0 50px 0 30px;
-  margin-bottom: 40px;
+  margin-bottom: 30px;
   font-size: 44px;
   line-height: 50px;
   text-transform: uppercase;
@@ -34,7 +43,7 @@
 .about__quote-text::before {
   content: "“";
   position: absolute;
-  top: -10px;
+  top: 40px;
   left: 0;
   font-weight: 900;
   color: var(--main-color);
@@ -43,6 +52,7 @@
 .about__quote-text::after {
   content: "”";
   position: absolute;
+  bottom: 120px;
   right: 110px;
   font-weight: 900;
   color: var(--main-color);

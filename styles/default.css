@@ -1,6 +1,7 @@
 html {
   position: relative;
   box-sizing: border-box;
+  scroll-behavior: smooth;
 }
 
 *,
@@ -74,19 +75,21 @@ input[type="date"]::-webkit-calendar-picker-indicator {
 
 input[type="date"]::-webkit-datetime-edit,
 input[type="time"]::-webkit-datetime-edit {
-  color: transparent; 
+  color: transparent;
 }
 
-input, textarea {
-  outline:none;
+input,
+textarea {
+  outline: none;
 }
 
 input:active,
 input:focus {
-  outline:none;
+  outline: none;
 }
 
-button:active, button:focus {
+button:active,
+button:focus {
   outline: none;
 }
 

@@ -14,13 +14,13 @@
   width: 675px;
   height: 762px;
   bottom: 0;
-  right: 0;
+  right: 130px;
   background-image: url("../img/vr-man.png");
   background-size: contain;
 }
 
 .banner__content {
-  margin-bottom: 40px;
+  margin-bottom: 29px;
 }
 
 .banner__title {
@@ -39,8 +39,8 @@
 .banner__list {
   display: flex;
   align-items: flex-end;
-  margin-bottom: 150px;
-  gap: 40px;
+  margin-bottom: 175px;
+  gap: 28px;
 }
 
 .banner__item {
@@ -60,8 +60,8 @@
 }
 
 .banner__subtitle_new {
-  font-size: 75px;
-  line-height: 106px;
+  font-size: 63px;
+  line-height: 90px;
 }
 
 .banner__text {
@@ -72,7 +72,9 @@
 
 .banner__button {
   padding: 25px 69px;
-  background-color: var(--main-color)
+  background-color: var(--main-color);
+  font-size: 26px;
+  line-height: 30px;
 }
 
 .banner__button:hover,
@@ -85,10 +87,11 @@
 }
 
 .banner__next {
+  display: block;
   position: absolute;
   height: 97px;
   width: 97px;
-  left: 541px;
+  left: calc(50% - 47.5px);
   bottom: 90px;
   z-index: 10;
   border-radius: 50%;
@@ -97,6 +100,7 @@
   outline-offset: 10px;
   transition-duration: .3s;
   transition-property: background-image, outline;
+  cursor: pointer;
 }
 
 .banner__next:hover {
