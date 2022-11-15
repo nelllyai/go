@@ -11,19 +11,20 @@
 
 .rooms__item {
   padding: 94px 164px;
-  flex-basis: 580px;
-  height: 349px;
-  background-size: contain;
+  background-size: cover;
   background-repeat: no-repeat;
-  font-size: 70px;
-  font-weight: 700;
-  line-height: 80px;
   text-align: center;
   text-transform: uppercase;
 }
 
 .rooms__link {
+  display: block;
+  margin: 0 auto;
+  max-width: 252px;
   text-decoration: none;
+  font-size: 70px;
+  font-weight: 700;
+  line-height: 80px;
   color: #fff;
 }
 
@@ -41,4 +42,47 @@
 
 .rooms__item_theme_neon {
   background-image: url("../img/neon-style.jpg");
+}
+
+@media (max-width: 1425px) {
+  .rooms__list {
+    justify-content: space-around;
+  }
+
+  .rooms__item {
+    padding: 74px 96px;
+  }
+
+  .rooms__link {
+    font-size: 50px;
+    line-height: 60px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .rooms__list {
+    justify-content: space-between;
+  }
+}
+
+@media (max-width: 1280px) {
+  .rooms {
+    padding-bottom: 70px;
+  }
+
+  .rooms__title {
+    margin-bottom: 35px;
+  }
+}
+
+@media (max-width: 1015px) {
+  .rooms__item {
+    padding: 60px 102px 38px;
+  }
+
+  .rooms__link {
+    max-width: 130px;
+    font-size: 40px;
+    line-height: 50px;
+  }
 }

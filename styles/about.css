@@ -12,7 +12,9 @@
 }
 
 .about__photos {
-  min-width: 600px;
+  align-self: flex-start;
+  width: 51%;
+  object-fit: contain;
 }
 
 .about__paragraph {
@@ -73,4 +75,56 @@
   max-width: 300px;
   padding-left: 30px;
   font-style: normal;
+}
+
+@media (max-width: 1280px) {
+  .about {
+    padding-top: 70px;
+  }
+
+  .about__title {
+    margin-bottom: 27px;
+  }
+
+  .about__content {
+    display: flex;
+    gap: 45px;
+  }
+
+  .about__photos {
+    width: 46%;
+  }
+
+  .about__text {
+    margin-bottom: 20px;
+  }
+
+  .about__quote-text {
+    padding: 0 30px 0 24px;
+    margin-bottom: 5px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about__quote-text::before {
+    top: 20px;
+  }
+
+  .about__quote-text::after {
+    bottom: 105px;
+    right: 175px;
+  }
+
+  .about__figure {
+    padding-left: 115px;
+  }
+
+  .about__img {
+    width: 70px;
+  }
+
+  .about__figcaption {
+    max-width: 235px;
+    padding-left: 35px;
+  }
 }

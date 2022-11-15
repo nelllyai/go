@@ -4,7 +4,7 @@
 
 .banner__container {
   position: relative;
-  min-height: 823px;
+  padding-bottom: 179px;
 }
 
 .banner__container::after {
@@ -17,6 +17,7 @@
   right: 130px;
   background-image: url("../img/vr-man.png");
   background-size: contain;
+  background-repeat: no-repeat;
 }
 
 .banner__content {
@@ -96,6 +97,7 @@
   z-index: 10;
   border-radius: 50%;
   background-image: url('../img/down.svg');
+  background-size: contain;
   outline: 6px solid transparent;
   outline-offset: 10px;
   transition-duration: .3s;
@@ -116,4 +118,70 @@
 .banner__next:active {
   outline-color: transparent;
   background-image: url('../img/down-active.svg');
+}
+
+@media (max-width: 1280px) {
+  .banner {
+    padding-top: 15px;
+    padding-bottom: 33px;
+  }
+
+  .banner__container{
+    padding-bottom: 90px;
+  }
+
+  .banner__container::after {
+    width: 453px;
+    height: 520px;
+    bottom: 0;
+    right: 60px;
+  }
+
+  .banner__title {
+    margin-bottom: 22px;
+    font-size: 120px;
+    line-height: 100%;
+  }
+
+  .banner__tagline {
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .banner__list {
+    margin-bottom: 98px;
+    gap: unset;
+  }
+
+  .banner__subtitle_4 {
+    font-size: 80px;
+    line-height: 113px;
+  }
+
+  .banner__subtitle_new {
+    font-size: 50px;
+    line-height: 73px;
+  }
+
+  .banner__text {
+    font-size: 26px;
+    line-height: 30px;
+  }
+
+  .banner__button-container {
+    padding-left: 39px;
+  }
+
+  .banner__button {
+    padding: 17px 48px;
+    font-size: 22px;
+    line-height: 30px;
+  }
+
+  .banner__next {
+    height: 67px;
+    width: 67px;
+    left: calc(50% - 33.5px);
+    bottom: 54px;
+  }
 }

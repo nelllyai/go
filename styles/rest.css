@@ -10,14 +10,18 @@
 .rest__list {
   display: flex;
   flex-wrap: wrap;
-  gap: 40px 20px;
+  justify-content: space-between;
+  row-gap: 40px;
 }
 
 .rest__item {
   padding: 166px 40px 0;
   height: 228px;
-  flex-basis: 380px;
+  background-size: contain;
+  flex-basis: 32%;
   font-weight: 700;
+  background-size: cover;
+  background-repeat: no-repeat;
   transition: scale .3s;
 }
 
@@ -51,4 +55,38 @@
 
 .rest__item_playstation {
   background-image: url('../img/playstation.jpg');
+}
+
+@media (max-width: 1325px) {
+  .rest__item_movies {
+    padding-top: 140px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .rest {
+    --central-offset: 53px;
+    padding-top: 40px;
+    padding-bottom: calc(35px + var(--central-offset));
+  }
+  
+  .rest__title {
+    margin-bottom: 40px;
+  }
+  
+  .rest__list {
+    row-gap: 30px;
+  }
+  
+  .rest__item {
+    padding: 114px 20px 0;
+    height: 172px;
+    flex-basis: 32%;
+    font-weight: 700;
+    transition: scale .3s;
+  }
+
+  .rest__item_movies {
+    padding-top: 83px;
+  }
 }

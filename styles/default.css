@@ -100,3 +100,10 @@ button::-moz-focus-inner {
 svg {
   width: 100%;
 }
+
+@media (max-width: 1280px) {
+  body {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}

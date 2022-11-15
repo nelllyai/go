@@ -9,6 +9,10 @@
   align-items: center;
 }
 
+.header__logo {
+  width: 120px;
+}
+
 .header__button {
   flex-basis: 280px;
   padding: 12px 0;
@@ -25,4 +29,18 @@
 .header__button:active {
   border: 1px solid #000;
   background-color: var(--average-color);
+}
+
+@media (max-width: 1280px) {
+  .header {
+    padding-bottom: 15px;
+  }
+  
+  .header__logo {
+    width: 87px;
+  }
+  
+  .header__button {
+    flex-basis: 230px;
+  }
 }

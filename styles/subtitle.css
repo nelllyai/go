@@ -8,3 +8,12 @@
   text-transform: uppercase;
   text-align: center;
 }
+
+@media (max-width: 1280px) {
+  .subtitle {
+    margin-bottom: 27px;
+    max-width: 600px;
+    font-size: 30px;
+    line-height: 40px;
+  }
+}
