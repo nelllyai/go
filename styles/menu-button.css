@@ -1,0 +1,17 @@
+.menu-button {
+  display: none;
+  color: var(--main-color);
+}
+
+@media (max-width: 1020px) {
+  .menu-button {
+    display: block;
+  }
+}
+
+@media (max-width: 640px) {
+  .menu-button {
+    width: 39px;
+    height: 20px;
+  }
+}

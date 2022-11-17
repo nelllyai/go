@@ -15,10 +15,13 @@
 
 .contact__item {
   position: relative;
-  margin-bottom: 11px;
   font-size: 24px;
   font-weight: 700;
   text-decoration: none;
+}
+
+.contact__item:not(:last-of-type) {
+  margin-bottom: 11px;
 }
 
 .contact__item:first-child {
@@ -70,8 +73,8 @@
 
 .contact__media-link {
   display: block;
-  width: 50px;
-  height: 50px;
+  width: 100%;
+  height: 100%;
   border-radius: 50%;
   outline: 1px solid transparent;
   outline-offset: 3px;
@@ -95,48 +98,48 @@
 }
 
 .contact__map {
-  background-size: cover;
+  background-size: contain;
 }
 
 @media (max-width: 1280px) {
   .contact {
     padding-bottom: 47px;
   }
-  
-  .contact__content {
-    display: flex;
-    justify-content: space-between;
+
+  .contact__title {
+    margin-bottom: 26px;
   }
-  
+
   .contact__list {
     padding-left: 40px;
-    margin-bottom: 47px;
+    margin-bottom: 42px;
   }
-  
+
   .contact__item {
     position: relative;
-    margin-bottom: 11px;
     font-size: 24px;
+    line-height: 28px;
     font-weight: 700;
     text-decoration: none;
   }
-  
-  .contact__item:first-child {
-    margin-bottom: 54px;
+
+  .contact__item:not(:last-of-type) {
+    margin-bottom: 5px;
   }
-  
+
+  .contact__item:first-child {
+    margin-bottom: 45px;
+  }
+
   .contact__item::before {
     width: 26px;
     height: 26px;
     top: calc(50% - 7px);
     left: -40px;
   }
-  
+
   .contact__media {
-    margin-right: 12px;
-  }
-  
-  .contact__media-link {
+    margin-right: 24px;
     width: 38px;
     height: 38px;
   }
@@ -144,5 +147,129 @@
   .contact__map {
     max-width: 542px;
     height: 274px;
+  }
+}
+
+@media (max-width: 940px) {
+  .contact {
+    padding-top: 40px;
+  }
+
+  .contact__title {
+    margin-bottom: 30px;
+  }
+
+  .contact__content {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact__all-contacts {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 20px;
+  }
+
+  .contact__list {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+  }
+
+  .contact__item:not(:last-of-type) {
+    margin-bottom: 27px;
+  }
+
+  .contact__item:first-child {
+    padding-right: 35px;
+    margin-bottom: 30px;
+  }
+
+  .contact__address {
+    text-align: center;
+  }
+
+  .contact__address::before {
+    width: 26px;
+    height: 26px;
+    top: 0;
+    left: 10px;
+  }
+
+  .contact__map {
+    min-width: 100%;
+    max-width: 100%;
+    height: 337px;
+  }
+}
+
+@media (max-width: 640px) {
+  .contact {
+    padding-top: 15px;
+  }
+
+  .contact__title {
+    margin-bottom: 15px;
+  }
+
+  .contact__all-contacts {
+    margin-bottom: 33px;
+  }
+
+  .contact__list {
+    margin-bottom: 11px;
+  }
+
+  .contact__item {
+    padding-right: 42px;
+  }
+
+  .contact__item {
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .contact__item:not(:last-of-type) {
+    margin-bottom: 11px;
+  }
+
+  .contact__item:first-child {
+    margin-bottom: 10px;
+  }
+
+  .contact__item::before {
+    width: 22px;
+    height: 22px;
+    top: -2px;
+    left: -24px;
+  }
+
+  .contact__address {
+    text-align: center;
+  }
+
+  .contact__address::before {
+    width: 20px;
+    height: 20px;
+    left: 0px;
+  }
+
+  .contact__social {
+    max-width: 185px;
+  }
+
+  .contact__media {
+    width: 28px;
+    height: 28px;
+  }
+
+  .contact__media:not(:last-child) {
+    margin-right: 20px;
+  }
+
+  .contact__map {
+    height: 194px;
   }
 }

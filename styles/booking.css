@@ -14,17 +14,7 @@
 }
 
 .booking__fieldset {
-  display: flex;
-  justify-content: space-around;
   margin-bottom: 60px;
-}
-
-.booking__fieldset:last-child {
-  margin-bottom: 40px;
-}
-
-.booking__fieldset_room {
-  justify-content: space-between;
 }
 
 .booking__legend {
@@ -35,8 +25,9 @@
   text-align: center;
 }
 
-.booking__legend_small-margin {
-  margin-bottom: 28px;
+.booking__room {
+  display: flex;
+  justify-content: space-between;
 }
 
 .booking__button-label {
@@ -75,18 +66,19 @@
   max-width: 980px;
 }
 
-.booking__label_center {
+.booking__fun {
   display: flex;
-  align-items: center;
-}
-
-.booking__fieldset_fun {
-  justify-content: space-between;
+  justify-content: flex-start;
+  gap: 175px;
 }
 
 .booking__fieldset_subfieldset {
-  justify-content: flex-start;
   margin-bottom: 0;
+}
+
+.booking__label_center {
+  display: flex;
+  align-items: center;
 }
 
 .booking__sublegend {
@@ -124,24 +116,59 @@
   outline: 1px solid var(--light-color);
 }
 
-.booking__fieldset_final {
-  justify-content: space-between;
-  align-items: flex-end;
+.booking__fieldset_big-margin {
   margin-bottom: 40px;
-  gap: 40px;
 }
 
-.booking__block {
-  display: flex;
-  flex-direction: column;
-  gap: 14px;
+.booking__final {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr) 0px 2fr 0px 2fr;
+  grid-template-rows: repeat(2, 74px);
+  grid-template-areas:
+    "date time . name . phone"
+    "visitors visitors . surname . email";
+  align-items: end;
+  gap: 13px 20px;
 }
 
-.booking__block_row {
-  flex-basis: 300px;
-  flex-direction: row;
-  flex-wrap: wrap;
-  gap: 32px;
+.booking__legend_small-margin {
+  margin-bottom: 38px;
+}
+
+.booking__select {
+  padding: 12px 20px;
+  width: 100%;
+  height: 52px;
+  font-size: 18px;
+  line-height: 28px;
+}
+
+.booking__select_date {
+  grid-area: date;
+}
+
+.booking__select_time {
+  grid-area: time;
+}
+
+.booking__select_visitors {
+  grid-area: visitors;
+}
+
+.booking__label_name {
+  grid-area: name;
+}
+
+.booking__label_surname {
+  grid-area: surname;
+}
+
+.booking__label_phone {
+  grid-area: phone;
+}
+
+.booking__label_email {
+  grid-area: email;
 }
 
 .booking__final-label {
@@ -151,7 +178,7 @@
 
 .booking__input-text {
   display: block;
-  width: 280px;
+  width: 100%;
   height: 52px;
   border: 2px solid transparent;
   transition: border-color 0.2s;
@@ -161,22 +188,10 @@
   border-color: var(--light-color);
 }
 
-.booking__select {
-  padding: 12px 20px;
-  width: 134px;
-  height: 52px;
-}
-
-.booking__select_big {
-  width: 100%;
-}
-
 .booking__button {
   position: relative;
   align-self: flex-end;
   padding: 11px 50px;
-  width: 300px;
-  height: 60px;
   border: 3px solid transparent;
   background-color: #fff;
   color: var(--main-color);
@@ -209,7 +224,7 @@
   }
 
   .booking__legend {
-    margin-bottom: 27px;
+    margin-bottom: 30px;
   }
 
   .booking__button-label {
@@ -227,36 +242,207 @@
     max-width: none;
   }
 
-  .booking__fieldset_final {
+  .booking__fieldset_big-margin {
     margin-bottom: 50px;
+  }
+
+  .booking__legend_small-margin {
+    margin-bottom: 23px;
+  }
+
+  .booking__fieldset_big-margin {
+    margin-bottom: 53px;
+  }
+
+  .booking__final {
+    grid-template-columns: repeat(2, 1fr) 15px 2fr 15px 2fr;
+    gap: 13px 20px;
+  }
+
+  .booking__button {
+    padding: 11px 42px;
+  }
+}
+
+@media (max-width: 1100px) {
+  .booking__fun {
+    gap: 112px;
+  }
+}
+
+@media (max-width: 920px) {
+  .booking__fun {
+    flex-wrap: wrap;
+    gap: 32px 138px;
+  }
+
+  .booking__final {
+    grid-template-columns: repeat(2, 1fr) 78px 2fr;
+    grid-template-rows: 74px 12px repeat(2, 74px);
+    grid-template-areas:
+      "date time . visitors"
+      ". . . ."
+      "name name . phone"
+      "surname surname . email";
+    gap: 14px;
+  }
+}
+
+@media (max-width: 848px) {
+  .booking__button-label {
+    padding: 9px 20px;
+    flex-basis: 150px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+}
+
+@media (max-width: 768px) {
+  .booking {
+    padding: 50px 0;
+  }
+
+  .booking__title {
+    margin-bottom: 41px;
+  }
+
+  .booking__fieldset {
+    margin-bottom: 50px;
+  }
+
+  .booking__legend {
+    margin-bottom: 30px;
+  }
+
+  .booking__button-label {
+    padding: 6px 20px;
+    flex-basis: 150px;
+    font-size: 16px;
+    line-height: 20px;
+  }
+
+  .booking__fieldset_subfieldset {
+    margin-bottom: 0;
+  }
+
+  .booking__radio,
+  .booking__checkbox {
+    margin-right: 20px;
+    width: 40px;
+    height: 40px;
+  }
+
+  .booking__legend_small-margin {
+    margin-bottom: 10px;
+  }
+
+  .booking__button {
+    padding: 13px 47px;
+    font-size: 22px;
+    line-height: 28px;
+  }
+}
+
+@media (max-width: 700px) {
+  .booking__room {
+    flex-wrap: wrap;
+    row-gap: 14px;
+  }
+
+  .booking__button-label {
+    padding: 3px 15px;
+    flex-basis: 47%;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .booking__final {
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(2, 52px) 6px repeat(2, 74px) 5px repeat(2, 74px);
+    grid-template-areas:
+      "date time"
+      "visitors visitors"
+      ". ."
+      "name name"
+      "surname surname"
+      ". ."
+      "phone phone"
+      "email email";
+    align-items: flex-start;
+    gap: 15px 12px;
+  }
+}
+
+@media (max-width: 540px) {
+  .booking {
+    padding: 30px 0;
+  }
+
+  .booking__title {
+    margin-bottom: 17px;
+  }
+
+  .booking__form {
+    font-size: 16px;
+    line-height: 18px;
+  }
+
+  .booking__fieldset {
+    margin-bottom: 30px;
+  }
+
+  .booking__legend {
+    margin-bottom: 15px;
+    font-size: 14px;
+    line-height: 18px;
+  }
+
+  .booking__fieldset_big-margin {
+    margin-bottom: 35px;
   }
 
   .booking__legend_small-margin {
     margin-bottom: 20px;
   }
 
-  .booking__block {
-    gap: 9px;
+  .booking__fun {
+    flex-wrap: wrap;
+    gap: 25px 100px;
   }
 
-  .booking__block_row {
-    justify-content: space-between;
-    row-gap: 34px;
+  .booking__fieldset_subfieldset {
+    margin-bottom: 0;
   }
-  
-  .booking__final-label {
-    font-weight: 700;
+
+  .booking__sublegend {
+    margin-bottom: 14px;
     font-size: 14px;
+    line-height: 18px;
   }
-  
-  .booking__input-text {
-    width: 251px;
-    height: 52px;
+
+  .booking__list_console {
+    gap: 15px;
   }
-  
+
+  .booking__list_boardgames {
+    gap: 20px;
+  }
+
+  .booking__list_extras {
+    gap: 25px;
+  }
+
+  .booking__radio,
+  .booking__checkbox {
+    margin-right: 20px;
+    width: 30px;
+    height: 30px;
+  }
+
   .booking__button {
-    padding: 10px 38px;
-    width: 254px;
-    height: 50px;
+    padding: 14px 55px;
+    border-radius: 4px;
+    font-size: 18px;
+    line-height: 26px;
   }
 }

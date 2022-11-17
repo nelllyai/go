@@ -1,5 +1,5 @@
 .footer {
-  padding-top: 47px;
+  padding-top: 70px;
   padding-bottom: 20px;
   background: linear-gradient(180deg, #1B1A1B 0%, #370A37 100%);
 }
@@ -17,4 +17,34 @@
 
 .footer__design {
   margin-bottom: 6px;
+}
+
+@media (max-width: 1280px) {
+  .footer {
+    padding-top: 50px;
+  }
+}
+
+@media (max-width: 940px) {
+  .footer {
+    padding-top: 30px;
+  }
+}
+
+@media (max-width: 640px) {
+  .footer {
+    padding-top: 13px;
+  }
+
+  .footer__container {
+    flex-direction: column;
+    align-items: center;
+    gap: 20px;
+    font-size: 12px;
+    line-height: 16px;
+  }
+
+  .footer__author {
+    text-align: center;
+  }
 }

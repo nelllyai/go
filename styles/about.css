@@ -7,23 +7,27 @@
 }
 
 .about__content {
-  display: flex;
-  gap: 80px;
+  display: grid;
+  grid-template-columns: 600px 1fr;
+  grid-template-rows: 246px 217px;
+  gap: 38px 80px;
 }
 
 .about__photos {
-  align-self: flex-start;
-  width: 51%;
+  display: block;
+  grid-row: 1 / 4;
+  grid-column: 1 / 2;
   object-fit: contain;
 }
 
 .about__paragraph {
-  margin-bottom: 7px;
+  grid-row: 1 / 2;
+  grid-column: 2 / 3;
 }
 
 .about__text {
   margin-bottom: 30px;
-  white-space: pre-line;
+  max-width: 500px;
 }
 
 .about__text:last-child {
@@ -31,10 +35,14 @@
 }
 
 .about__quote {
-  position: relative;
+  display: flex;
+  flex-direction: column;
+  grid-row: 2 / 3;
+  grid-column: 2 / 3;
 }
 
 .about__quote-text {
+  position: relative;
   padding: 0 50px 0 30px;
   margin-bottom: 30px;
   font-size: 44px;
@@ -45,7 +53,7 @@
 .about__quote-text::before {
   content: "“";
   position: absolute;
-  top: 40px;
+  top: -10px;
   left: 0;
   font-weight: 900;
   color: var(--main-color);
@@ -54,27 +62,49 @@
 .about__quote-text::after {
   content: "”";
   position: absolute;
-  bottom: 120px;
+  bottom: 0px;
   right: 110px;
   font-weight: 900;
   color: var(--main-color);
 }
 
 .about__figure {
-  padding-left: 110px;
+  display: flex;
+  align-self: flex-end;
+  gap: 35px;
 }
 
 .about__img {
-  max-width: 100%;
   width: 80px;
+  height: 80px;
 }
 
-.about__figcaption {
-  display: inline-block;
-  vertical-align: baseline;
-  max-width: 300px;
-  padding-left: 30px;
-  font-style: normal;
+.about__author {
+  display: block;
+  max-width: 270px;
+}
+
+@media (max-width: 1435px) {
+  .about__quote-text {
+    max-width: 455px;
+    font-size: 30px;
+    line-height: 36px;
+  }
+
+  .about__quote-text::after {
+    bottom: 3px;
+    left: 260px;
+  }
+
+  .about__img {
+    width: 70px;
+    height: 70px;
+  }
+
+  .about__author {
+    max-width: 230px;
+    line-height: 26px;
+  }
 }
 
 @media (max-width: 1280px) {
@@ -87,12 +117,13 @@
   }
 
   .about__content {
-    display: flex;
-    gap: 45px;
+    grid-template-columns: 420px 1fr;
+    grid-template-rows: 195px 177px;
+    gap: 33px 40px;
   }
 
-  .about__photos {
-    width: 46%;
+  .about__paragraph {
+    margin-bottom: 44px;
   }
 
   .about__text {
@@ -101,30 +132,154 @@
 
   .about__quote-text {
     padding: 0 30px 0 24px;
-    margin-bottom: 5px;
+    margin-bottom: 23px;
     font-size: 30px;
     line-height: 36px;
   }
+}
 
-  .about__quote-text::before {
-    top: 20px;
+@media (max-width: 968px) {
+  .about {
+    padding-top: 60px;
+  }
+
+  .about__content {
+    grid-template-columns: 382px 1fr;
+    grid-template-rows: 380px 177px;
+    gap: 43px 28px;
+  }
+
+  .about__photos {
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .about__paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    grid-row: 1 / 2;
+    grid-column: 2 / 3;
+  }
+
+  .about__text {
+    margin-bottom: 20px;
+    max-width: none;
+  }
+
+  .about__quote {
+    grid-row: 2 / 3;
+    grid-column: 1 / 3;
+  }
+
+  .about__quote-text {
+    padding: 0 22px;
+    margin-bottom: 30px;
+    max-width: 730px;
+    font-size: 32px;
+    line-height: 36px;
   }
 
   .about__quote-text::after {
-    bottom: 105px;
-    right: 175px;
+    left: 550px;
+  }
+
+  .about__author {
+    max-width: 215px;
+  }
+}
+
+@media (max-width: 680px) {
+  .about {
+    padding-top: 60px;
+  }
+
+  .about__content {
+    grid-template-columns: 1fr;
+    grid-template-rows: 127px 1fr 232px;
+    gap: 17px;
+  }
+
+  .about__photos {
+    grid-row: 2 / 3;
+    grid-column: 1 / 2;
+  }
+
+  .about__paragraph {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    margin-bottom: 0;
+    grid-row: 1 / 2;
+    grid-column: 1 / 2;
+  }
+
+  .about__text {
+    margin-bottom: 20px;
+    max-width: none;
+  }
+
+  .about__quote {
+    grid-row: 3 / 4;
+    grid-column: 1 / 2;
+  }
+
+  .about__quote-text {
+    padding: 0 33px;
+    margin-bottom: 10px;
+    max-width: 370px;
+  }
+
+  .about__quote-text::after {
+    left: 280px;
   }
 
   .about__figure {
-    padding-left: 115px;
+    align-self: flex-start;
+  }
+
+  .about__author {
+    max-width: 215px;
+  }
+}
+
+@media (max-width: 640px) {
+  .about {
+    padding-top: 28px;
+  }
+
+  .about__title {
+    margin-bottom: 20px;
+  }
+
+  .about__content {
+    grid-template-rows: 127px 1fr 144px;
+  }
+
+  .about__quote-text {
+    padding: 0 17px;
+    margin-bottom: 10px;
+    max-width: 280px;
+    font-size: 18px;
+    line-height: 26px;
+  }
+
+  .about__quote-text::after {
+    left: 155px;
+  }
+
+  .about__figure {
+    gap: 10px;
   }
 
   .about__img {
-    width: 70px;
+    width: 56px;
+    height: 56px;
   }
 
-  .about__figcaption {
-    max-width: 235px;
-    padding-left: 35px;
+  .about__author {
+    max-width: 200px;
+    line-height: 16px;
   }
 }

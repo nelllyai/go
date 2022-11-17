@@ -44,3 +44,34 @@
     flex-basis: 230px;
   }
 }
+
+@media (max-width: 1020px) {
+  .header {
+    padding-top: 33px;
+  }
+  
+  .header__logo {
+    width: 87px;
+    height: 55px;
+  }
+  
+  .header__button {
+    padding: 7px 16px;
+  }
+}
+
+@media (max-width: 640px) {
+  .header {
+    padding-top: 20px;
+    padding-bottom: 10px;
+  }
+
+  .header__logo {
+    width: 66px;
+    height: 42px;
+  }
+
+  .header__button {
+    display: none;
+  }
+}
