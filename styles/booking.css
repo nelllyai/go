@@ -40,6 +40,8 @@
   font-size: 30px;
   line-height: 40px;
   color: #000000;
+  text-align: center;
+  cursor: pointer;
 }
 
 .booking__button-label:hover {
@@ -47,13 +49,25 @@
   background-color: var(--pale-color);
 }
 
-.booking__button-label:focus {
+.booking__button-label:active {
+  border-color: #fff;
+  background-color: var(--main-color);
+  color: white;
+}
+
+.booking__radio-hidden {
+  opacity: 0;
+  height: 0;
+  width: 0;
+}
+
+.booking__radio-hidden:focus + .booking__button-label {
   border-color: var(--average-color);
   background-color: #fff;
   color: black;
 }
 
-.booking__button-label:active {
+.booking__radio-hidden:checked + .booking__button-label {
   border-color: #fff;
   background-color: var(--main-color);
   color: white;

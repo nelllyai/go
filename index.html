@@ -117,10 +117,17 @@
             <legend class="booking__legend">Выбери зал</legend>
 
             <div class="booking__room">
-              <button class="button booking__button-label" type="button">80’s vibes</button>
-              <button class="button booking__button-label" type="button">Star wars</button>
-              <button class="button booking__button-label" type="button">wild west</button>
-              <button class="button booking__button-label" type="button">neon style</button>
+              <input class="booking__radio-hidden" type="radio" name="room" value="80s vibes" id="80s" required>
+              <label class="button booking__button-label" for="80s">80's vibes</label>
+
+              <input class="booking__radio-hidden" type="radio" name="room" value="star wars" id="star_wars">
+              <label class="button booking__button-label" for="star_wars">Star wars</label>
+
+              <input class="booking__radio-hidden" type="radio" name="room" value="wild west" id="wild_west">
+              <label class="button booking__button-label" for="wild_west">wild west</label>
+
+              <input class="booking__radio-hidden" type="radio" name="room" value="neon style" id="neon">
+              <label class="button booking__button-label" for="neon">neon style</label>
             </div>
           </fieldset>
 
@@ -201,9 +208,9 @@
               <div class="booking__final">
                 <select class="booking__select booking__select_date" name="date" required>
                   <option class="booking__option" value="" selected disabled>Дата</option>
-                  <option class="booking__option" value="01-11-22">1 ноября 2022 года</option>
-                  <option class="booking__option" value="04-11-22">4 ноября 2022 года</option>
-                  <option class="booking__option" value="06-11-22">6 ноября 2022 года</option>
+                  <option class="booking__option" value="23-11-22">23.11.22</option>
+                  <option class="booking__option" value="28-11-22">28.11.22</option>
+                  <option class="booking__option" value="06-12-22">06.12.22</option>
                 </select>
 
                 <select class="booking__select booking__select_time" name="time" required>
