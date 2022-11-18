@@ -68,16 +68,6 @@ section {
   clear: both;
 }
 
-input[type="time"]::-webkit-calendar-picker-indicator,
-input[type="date"]::-webkit-calendar-picker-indicator {
-  background: none;
-}
-
-input[type="date"]::-webkit-datetime-edit,
-input[type="time"]::-webkit-datetime-edit {
-  color: transparent;
-}
-
 input,
 textarea {
   outline: none;
@@ -86,17 +76,17 @@ textarea {
 select {
   -webkit-appearance: none;
   -moz-appearance: none;
+  background-color: white;
   background-image: url("../img/select-arrow.svg");
   background-repeat: no-repeat;
   background-position-x: calc(100% - 1em);
   background-position-y: 50%;
 }
 
+select:active,
+select:focus,
 input:active,
-input:focus {
-  outline: none;
-}
-
+input:focus,
 button:active,
 button:focus {
   outline: none;

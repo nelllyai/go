@@ -94,11 +94,16 @@
   gap: 20px;
 }
 
+.booking__select,
+.booking__radio,
+.booking__checkbox {
+  transition-duration: 0.3s;
+  transition-property: outline;
+}
+
 .booking__radio,
 .booking__checkbox {
   margin-right: 12px;
-  transition-duration: 0.3s;
-  transition-property: outline;
 }
 
 .booking__radio {
@@ -111,6 +116,7 @@
   height: 25px;
 }
 
+.booking__select:focus,
 .booking__radio:focus,
 .booking__checkbox:focus {
   outline: 1px solid var(--light-color);
