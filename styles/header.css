@@ -38,6 +38,7 @@
   
   .header__logo {
     width: 87px;
+    height: 55px;
   }
   
   .header__button {
@@ -48,11 +49,6 @@
 @media (max-width: 1020px) {
   .header {
     padding-top: 33px;
-  }
-  
-  .header__logo {
-    width: 87px;
-    height: 55px;
   }
   
   .header__button {

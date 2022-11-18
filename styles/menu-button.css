@@ -3,6 +3,15 @@
   color: var(--main-color);
 }
 
+.menu-button:hover {
+  color: var(--light-color);
+}
+
+.menu-button:focus,
+.menu-button:active {
+  color: var(--light-average-color);
+}
+
 @media (max-width: 1020px) {
   .menu-button {
     display: block;

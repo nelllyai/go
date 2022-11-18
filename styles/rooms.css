@@ -4,9 +4,9 @@
 
 .rooms__list {
   display: flex;
+  flex-wrap: wrap;
   justify-content: space-between;
   row-gap: 20px;
-  flex-wrap: wrap;
 }
 
 .rooms__item {
@@ -42,11 +42,11 @@
   display: block;
   margin: 0 auto;
   max-width: 252px;
-  text-decoration: none;
-  font-size: 70px;
   font-weight: 700;
+  font-size: 70px;
   line-height: 80px;
   color: #fff;
+  text-decoration: none;
 }
 
 @media (max-width: 1425px) {

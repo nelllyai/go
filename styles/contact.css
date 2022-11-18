@@ -10,17 +10,17 @@
 .contact__list {
   padding-left: 60px;
   margin-bottom: 40px;
-  list-style-type: none;
 }
 
 .contact__item {
   position: relative;
-  font-size: 24px;
   font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
   text-decoration: none;
 }
 
-.contact__item:not(:last-of-type) {
+.contact__item:not(:last-child) {
   margin-bottom: 11px;
 }
 
@@ -67,7 +67,7 @@
   margin-right: 23px;
 }
 
-.contact__media:last-of-type {
+.contact__media:last-child {
   margin-right: 0;
 }
 
@@ -103,6 +103,7 @@
 
 @media (max-width: 1280px) {
   .contact {
+    padding-top: 20px;
     padding-bottom: 47px;
   }
 
@@ -115,18 +116,10 @@
     margin-bottom: 42px;
   }
 
-  .contact__item {
-    position: relative;
-    font-size: 24px;
-    line-height: 28px;
-    font-weight: 700;
-    text-decoration: none;
-  }
-
-  .contact__item:not(:last-of-type) {
+  .contact__item:not(:last-child) {
     margin-bottom: 5px;
   }
-
+  
   .contact__item:first-child {
     margin-bottom: 45px;
   }
@@ -152,11 +145,11 @@
 
 @media (max-width: 940px) {
   .contact {
-    padding-top: 40px;
+    padding-top: 30px;
   }
 
   .contact__title {
-    margin-bottom: 30px;
+    margin-bottom: 28px;
   }
 
   .contact__content {
@@ -178,7 +171,11 @@
     margin-bottom: 30px;
   }
 
-  .contact__item:not(:last-of-type) {
+  .contact__item {
+    padding-right: 32px;
+  }
+
+  .contact__item:not(:last-child) {
     margin-bottom: 27px;
   }
 
@@ -192,8 +189,6 @@
   }
 
   .contact__address::before {
-    width: 26px;
-    height: 26px;
     top: 0;
     left: 10px;
   }
@@ -207,7 +202,7 @@
 
 @media (max-width: 640px) {
   .contact {
-    padding-top: 15px;
+    padding-top: 6px;
   }
 
   .contact__title {
@@ -231,7 +226,7 @@
     line-height: 18px;
   }
 
-  .contact__item:not(:last-of-type) {
+  .contact__item:not(:last-child) {
     margin-bottom: 11px;
   }
 

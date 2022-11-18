@@ -23,11 +23,11 @@
 .about__paragraph {
   grid-row: 1 / 2;
   grid-column: 2 / 3;
+  max-width: 500px;
 }
 
 .about__text {
   margin-bottom: 30px;
-  max-width: 500px;
 }
 
 .about__text:last-child {
@@ -161,11 +161,11 @@
     margin-bottom: 0;
     grid-row: 1 / 2;
     grid-column: 2 / 3;
+    max-width: none;
   }
 
   .about__text {
     margin-bottom: 20px;
-    max-width: none;
   }
 
   .about__quote {
@@ -191,10 +191,6 @@
 }
 
 @media (max-width: 680px) {
-  .about {
-    padding-top: 60px;
-  }
-
   .about__content {
     grid-template-columns: 1fr;
     grid-template-rows: 127px 1fr 232px;
@@ -207,17 +203,8 @@
   }
 
   .about__paragraph {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    margin-bottom: 0;
     grid-row: 1 / 2;
     grid-column: 1 / 2;
-  }
-
-  .about__text {
-    margin-bottom: 20px;
-    max-width: none;
   }
 
   .about__quote {
@@ -237,10 +224,6 @@
 
   .about__figure {
     align-self: flex-start;
-  }
-
-  .about__author {
-    max-width: 215px;
   }
 }
 

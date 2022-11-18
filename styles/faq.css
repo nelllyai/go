@@ -5,29 +5,27 @@
 .faq__item {
   position: relative;
   display: flex;
-  padding-left: 70px;
   align-items: center;
+  padding-left: 70px;
   height: 87px;
   background-color: #fff;
   font-weight: 700;
   font-size: 24px;
-  list-style-type: none;
-  cursor: pointer;
   color: #1C1A1A;
+  cursor: pointer;
 }
 
-.faq__item+.faq__item {
-  margin-top: 20px;
+.faq__item:not(:last-child) {
+  margin-bottom: 20px;
 }
 
 .faq__item::after {
   content: "";
-  display: inline-block;
   position: absolute;
+  top: calc(50% - 24px);
+  right: 68px;
   width: 48px;
   height: 48px;
-  right: 68px;
-  top: calc(50% - 24px);
   background-image: url("../img/open-purple.svg");
   background-size: contain;
   transition-duration: .2s;
@@ -64,12 +62,15 @@
     margin-bottom: 29px;
   }
 
-  .faq__item:nth-child(n) {
+  .faq__item {
     padding-left: 25px;
     height: 70px;
-    background-color: #fff;
     font-size: 20px;
     line-height: 24px;
+  }
+
+  .faq__item:nth-child(even) {
+    background-color: #fff;
     color: #1C1A1A;
   }
 
@@ -77,8 +78,8 @@
     display: none;
   }
 
-  .faq__item+.faq__item {
-    margin-top: 15px;
+  .faq__item:not(:last-child) {
+    margin-bottom: 15px;
   }
 
   .faq__item::after {
@@ -95,7 +96,7 @@
     margin-bottom: 23px;
   }
 
-  .faq__item:nth-child(n) {
+  .faq__item {
     padding-left: 58px;
     font-size: 18px;
     line-height: 24px;
@@ -111,7 +112,7 @@
     margin-bottom: 21px;
   }
 
-  .faq__item:nth-child(n) {
+  .faq__item {
     padding-left: 10px;
     padding-right: 40px;
     height: 46px;
@@ -126,7 +127,7 @@
     height: 30px;
   }
 
-  .faq__item+.faq__item {
-    margin-top: 10px;
+  .faq__item:not(:last-child) {
+    margin-bottom: 10px;
   }
 }

@@ -83,6 +83,15 @@ textarea {
   outline: none;
 }
 
+select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  background-image: url("../img/select-arrow.svg");
+  background-repeat: no-repeat;
+  background-position-x: calc(100% - 1em);
+  background-position-y: 50%;
+}
+
 input:active,
 input:focus {
   outline: none;
