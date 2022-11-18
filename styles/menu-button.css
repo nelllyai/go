@@ -7,6 +7,10 @@
   color: var(--light-color);
 }
 
+.menu-button:focus {
+  outline: 1px solid var(--light-color);
+}
+
 .menu-button:focus,
 .menu-button:active {
   color: var(--light-average-color);
