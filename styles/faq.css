@@ -2,11 +2,16 @@
   margin-bottom: 47px;
 }
 
-.faq__item {
+.faq__item:not(:last-child) {
+  margin-bottom: 20px;
+}
+
+.faq__button {
   position: relative;
   display: flex;
   align-items: center;
   padding-left: 70px;
+  width: 100%;
   height: 87px;
   background-color: #fff;
   font-weight: 700;
@@ -15,11 +20,7 @@
   cursor: pointer;
 }
 
-.faq__item:not(:last-child) {
-  margin-bottom: 20px;
-}
-
-.faq__item::after {
+.faq__button::after {
   content: "";
   position: absolute;
   top: calc(50% - 24px);
@@ -32,29 +33,41 @@
   transition-property: background-image;
 }
 
-.faq__item:nth-child(even) {
+.faq__item:nth-child(even) > .faq__button {
   background-color: var(--dark-color);
   color: #fff;
 }
 
-.faq__item:hover::after {
+.faq__button:hover::after {
   background-image: url('../img/open-purple-hover.svg');
 }
 
-.faq__item:active::after {
+.faq__item_active .faq__button:hover::after {
   background-image: url('../img/open-purple-active.svg');
 }
 
-.faq__item:nth-child(even)::after {
+.faq__item:nth-child(even) .faq__button::after {
   background-image: url("../img/open-white.svg");
 }
 
-.faq__item:nth-child(even):hover::after {
+.faq__item:nth-child(even) .faq__button:hover::after {
   background-image: url("../img/open-white-hover.svg");
 }
 
-.faq__item:nth-child(even):active::after {
+.faq__item:nth-child(even).faq__item_active .faq__button:hover::after {
   background-image: url("../img/open-white-active.svg");
+}
+
+.faq__text-wrapper {
+  height: 0;
+  overflow: hidden;
+  background-color: white;
+  color: black;
+  transition: height .3s ease-in-out;
+}
+
+.faq__text {
+  padding: 50px 70px;
 }
 
 @media (max-width: 1280px) {
@@ -62,32 +75,36 @@
     margin-bottom: 29px;
   }
 
-  .faq__item {
+  .faq__item:not(:last-child) {
+    margin-bottom: 15px;
+  }
+
+  .faq__button {
     padding-left: 25px;
     height: 70px;
     font-size: 20px;
     line-height: 24px;
   }
 
-  .faq__item:nth-child(even) {
+  .faq__item:nth-child(even) .faq__button {
     background-color: #fff;
     color: #1C1A1A;
   }
 
-  .faq__item:last-child {
-    display: none;
-  }
-
-  .faq__item:not(:last-child) {
-    margin-bottom: 15px;
-  }
-
-  .faq__item::after {
+  .faq__button::after {
     right: 20px;
   }
 
-  .faq__item:nth-child(even)::after {
+  .faq__item:nth-child(even) .faq__button::after {
     background-image: url("../img/open-purple.svg");
+  }
+
+  .faq__item:nth-child(even) .faq__button:hover::after {
+    background-image: url("../img/open-purple-hover.svg");
+  }
+  
+  .faq__item:nth-child(even).faq__item_active .faq__button:hover::after {
+    background-image: url("../img/open-purple-active.svg");
   }
 }
 
@@ -96,13 +113,13 @@
     margin-bottom: 23px;
   }
 
-  .faq__item {
+  .faq__button {
     padding-left: 58px;
     font-size: 18px;
     line-height: 24px;
   }
 
-  .faq__item::after {
+  .faq__button::after {
     right: 65px;
   }
 }
@@ -112,7 +129,11 @@
     margin-bottom: 21px;
   }
 
-  .faq__item {
+  .faq__item:not(:last-child) {
+    margin-bottom: 10px;
+  }
+
+  .faq__button {
     padding-left: 10px;
     padding-right: 40px;
     height: 46px;
@@ -120,14 +141,10 @@
     line-height: 16px;
   }
 
-  .faq__item::after {
+  .faq__button::after {
     top: calc(50% - 15px);
     right: 13px;
     width: 30px;
     height: 30px;
-  }
-
-  .faq__item:not(:last-child) {
-    margin-bottom: 10px;
   }
 }
