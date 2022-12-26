@@ -1,0 +1,48 @@
+.overlay {
+  visibility: hidden;
+  position: fixed;
+  left: 0;
+  right: 0;
+  top: 0;
+  bottom: 0;
+  z-index: 99;
+  height: 100%;
+  width: 100%;
+  background-color: rgba(0,0,0,0.5);
+  opacity: 0;
+  transition: 0.3s ease-in-out;
+}
+
+.overlay_active {
+  visibility: visible;
+  opacity: 1;
+}
+
+.overlay__container {
+  position: absolute;
+  top: 150px;
+  left: 50%;
+  margin-right: -50%;
+  transform: translateX(-50%);
+  padding: 60px 150px 80px;
+  max-width: 790px;
+  box-shadow: 0px 0px 5px rgba(0, 0, 0, 0.2);
+  background-color: var(--dark-color);
+}
+
+.overlay__close {
+  position: absolute;
+  top: 15px;
+  right: 15px;
+}
+
+@media (max-width: 640px) {
+  .overlay__container {
+    padding: 60px 20px 90px;
+  }
+
+  .overlay__close {
+    width: 30px;
+    height: 30px;
+  }
+}
