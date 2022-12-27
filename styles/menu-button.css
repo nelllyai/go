@@ -1,5 +1,7 @@
 .menu-button {
   display: none;
+  min-width: 54px;
+  min-height: 59px;
   color: var(--main-color);
 }
 
@@ -19,11 +21,14 @@
 @media (max-width: 1020px) {
   .menu-button {
     display: block;
+    z-index: 90;
   }
 }
 
 @media (max-width: 640px) {
   .menu-button {
+    min-width: 0;
+    min-height: 0;
     width: 39px;
     height: 20px;
   }

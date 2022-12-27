@@ -50,6 +50,21 @@
   .header {
     padding-top: 33px;
   }
+
+  .header__background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    height: 100px;
+    z-index: 80;
+    background-color: #1B1A1B;
+  }
+
+  .header__logo,
+  .header__button {
+    z-index: 90;
+  }
   
   .header__button {
     padding: 7px 16px;
@@ -60,6 +75,10 @@
   .header {
     padding-top: 20px;
     padding-bottom: 10px;
+  }
+
+  .header__background {
+    height: 72px;
   }
 
   .header__logo {

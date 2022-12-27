@@ -1,0 +1,9 @@
+.hamburger {
+  width: 100%;
+}
+
+.hamburger__link {
+  font-size: 22px;
+  line-height: 22px;
+  text-transform: uppercase;
+}
