@@ -31,10 +31,7 @@ const closeMenu = () => {
 
   startAnimation(duration, progress => {
     const top = progress * distance;
-
     menu.style.transform = `translateY(${distance - top}px)`;
-    console.log(distance - top);
-
     if (distance - top <= 0) {
       overlay.classList.remove('navigation_active');
     }
@@ -50,8 +47,6 @@ menuBtn.addEventListener('click', () => {
         <rect x="3.53564" width="54" height="5" rx="2" transform="rotate(45 3.53564 0)" />
       </svg>
     `;
-
-
 
     startAnimation(duration, progress => {
       const top = progress * distance;
