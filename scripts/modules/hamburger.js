@@ -1,6 +1,6 @@
 const menuBtn = document.querySelector('.menu-button');
 const overlay = document.querySelector('.navigation');
-const menu = document.querySelector('.navigation__list');
+const menu = document.querySelector('.navigation__wrapper');
 
 const duration = 400;
 const distance = 400;
@@ -28,7 +28,7 @@ const closeMenu = () => {
       <rect y="24" width="31" height="5" rx="2" />
     </svg>
   `;
-  
+
   startAnimation(duration, progress => {
     const top = progress * distance;
 
