@@ -1,24 +1,11 @@
+import startAnimation from './animation.js';
+
 const menuBtn = document.querySelector('.menu-button');
 const overlay = document.querySelector('.navigation');
 const menu = document.querySelector('.navigation__wrapper');
 
 const duration = 400;
 const distance = 400;
-
-const startAnimation = (duration, callback) => {
-  let start = NaN;
-
-  requestAnimationFrame(function step(timestamp) {
-    start ||= timestamp;
-
-    const progress = (timestamp - start) / duration;
-
-    callback(progress);
-    if (progress < 1) {
-      requestAnimationFrame(step);
-    }
-  })
-};
 
 const closeMenu = () => {
   menuBtn.innerHTML = `
