@@ -1,5 +1,5 @@
 const btns = [document.querySelector('.header__button'),
-document.querySelector('.navigation__button')];
+  document.querySelector('.navigation__button')];
 const overlay = document.querySelector('.overlay');
 
 btns.forEach(btn => btn.addEventListener('click', () => {

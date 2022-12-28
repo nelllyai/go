@@ -38,6 +38,7 @@
 
 @media (max-width: 640px) {
   .overlay__container {
+    top: 20px;
     padding: 60px 20px 90px;
   }
 
