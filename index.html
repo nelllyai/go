@@ -11,18 +11,21 @@
 </head>
 
 <body>
-  <header class="section header">
-    <div class="header__background"></div>
+  <header class="header">
     <div class="container header__container">
-      <button class="menu-button">
-        <svg width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
-          <rect width="54" height="5" rx="2" />
-          <rect y="12" width="54" height="5" rx="2" />
-          <rect y="24" width="31" height="5" rx="2" />
-        </svg>
-      </button>
-
-      <img class="header__logo" src="img/logo.svg" alt="Логотип GO">
+      <div class="header__content">
+        <button class="menu-button">
+          <svg width="54" height="29" viewBox="0 0 54 29" fill="currentColor" xmlns="http://www.w3.org/2000/svg">
+            <rect width="54" height="5" rx="2" />
+            <rect y="12" width="54" height="5" rx="2" />
+            <rect y="24" width="31" height="5" rx="2" />
+          </svg>
+        </button>
+  
+        <img class="header__logo" src="img/logo.svg" alt="Логотип GO">
+  
+        <button class="button header__button">Заказать звонок</button>
+      </div>
 
       <nav class="navigation">
         <div class="navigation__wrapper">
@@ -43,12 +46,10 @@
               <a class="navigation__link" href="#contact">Контакты</a>
             </li>
           </ul>
-
+  
           <button class="button navigation__button">Заказать звонок</button>
         </div>
       </nav>
-
-      <button class="button header__button">Заказать звонок</button>
     </div>
   </header>
 

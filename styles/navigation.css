@@ -1,3 +1,14 @@
+.navigation {
+  position: absolute;
+  top: 55px;
+  left: 300px;
+  right: 450px;
+}
+
+.navigation__wrapper {
+  width: 100%;
+}
+
 .navigation__list {
   display: flex;
   justify-content: space-between;
@@ -28,9 +39,17 @@
   background-color: var(--average-color);
 }
 
-@media (max-width: 1280px) {
+@media (max-width: 1366px) {
   .navigation__list {
     gap: 20px;
+  }
+}
+
+@media (max-width: 1280px) {
+  .navigation {
+    top: 65px;
+    left: 20%;
+    right: 30%;
   }
 
   .navigation__link {
@@ -41,8 +60,8 @@
 
 @media (max-width: 1020px) {
   .navigation {
+    position: fixed;
     visibility: hidden;
-    position: absolute;
     left: 0;
     right: 0;
     top: 0;
@@ -57,7 +76,7 @@
   .navigation_active {
     visibility: visible;
     opacity: 1;
-    z-index: 20;
+    z-index: 1;
   }
 
   .navigation__wrapper {
@@ -65,7 +84,7 @@
     display: flex;
     flex-direction: column;
     align-items: center;
-    top: -320px;
+    top: -330px;
     left: 0;
     right: 0;
     padding: 60px 0;

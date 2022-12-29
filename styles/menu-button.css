@@ -21,7 +21,6 @@
 @media (max-width: 1020px) {
   .menu-button {
     display: block;
-    z-index: 90;
   }
 }
 
