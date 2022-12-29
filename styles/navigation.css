@@ -1,6 +1,6 @@
 .navigation {
   position: absolute;
-  top: 55px;
+  top: 40px;
   left: 300px;
   right: 450px;
 }
@@ -47,7 +47,7 @@
 
 @media (max-width: 1280px) {
   .navigation {
-    top: 65px;
+    top: 50px;
     left: 20%;
     right: 30%;
   }
