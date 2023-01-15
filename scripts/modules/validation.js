@@ -30,4 +30,9 @@ modalFormValidation
       errorMessage: 'Телефон не корректен'
     }
   ])
-  .onSuccess(() => document.querySelector('.overlay').classList.remove('overlay_active'));
+  .onSuccess(() => {
+    const overlay = document.querySelector('.overlay');
+    overlay.querySelector('form').reset();
+    overlay.classList.remove('overlay_active');
+  });
+  
