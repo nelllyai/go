@@ -8,7 +8,6 @@ btns.forEach(btn => btn.addEventListener('click', () => {
     overlay.addEventListener('submit', event => {
       event.preventDefault();
       overlay.querySelector('form').reset();
-      overlay.classList.remove('overlay_active');
     });
 
     overlay.addEventListener('click', ({ target }) => {

@@ -11,6 +11,7 @@
   <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.css" />
 
   <script defer src="https://cdn.jsdelivr.net/npm/swiper@8/swiper-bundle.min.js"></script>
+  <script defer src="https://unpkg.com/just-validate@latest/dist/just-validate.production.min.js"></script>
   <script type="module" src="scripts/index.js"></script>
 </head>
 
@@ -72,12 +73,12 @@
 
           <label class="call__label">
             <span class="call__subtitle">Имя</span>
-            <input class="call__input" type="text" name="name" required>
+            <input class="call__input call__input_name" type="text" name="name" required>
           </label>
 
           <label class="call__label">
             <span class="call__subtitle">Телефон</span>
-            <input class="call__input" type="tel" name="phone" required>
+            <input class="call__input call__input_phone" type="tel" name="phone" required>
           </label>
 
           <button class="button call__submit">Позвонить мне</button>
@@ -384,24 +385,7 @@
 
           <div class="swiper-button-next"></div>
           <div class="swiper-button-prev"></div>
-
-          <!-- <div class="swiper__button swiper__button_prev">
-            <svg width="34" height="66" viewBox="0 0 34 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M32.5269 0L33.9411 1.41421L1.41422 33.9411L5.126e-06 32.5269L32.5269 0Z" fill="#6C0287" />
-              <path d="M5.126e-06 32.5269L1.41422 31.1127L33.9411 63.6396L32.5269 65.0538L5.126e-06 32.5269Z"
-                fill="#6C0287" />
-            </svg>
-          </div>
-          <div class="swiper__button swiper__button_next">
-            <svg width="35" height="66" viewBox="0 0 35 66" fill="none" xmlns="http://www.w3.org/2000/svg">
-              <path d="M1.52686 0L0.112642 1.41421L32.6396 33.9411L34.0538 32.5269L1.52686 0Z" fill="#6C0287" />
-              <path d="M34.0538 32.5269L32.6396 31.1127L0.112642 63.6396L1.52686 65.0538L34.0538 32.5269Z"
-                fill="#6C0287" />
-            </svg>
-          </div> -->
         </div>
-
-
       </div>
     </section>
 
