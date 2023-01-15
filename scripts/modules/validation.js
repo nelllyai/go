@@ -14,7 +14,7 @@ modalFormValidation
     {
       rule: 'minLength',
       value: 2,
-      errorMessage: 'Имя должно быть не короче 2 символов'
+      errorMessage: 'Не короче 2 символов'
     }
   ])
   .addField('.call__input_phone', [
@@ -35,4 +35,3 @@ modalFormValidation
     overlay.querySelector('form').reset();
     overlay.classList.remove('overlay_active');
   });
-  
