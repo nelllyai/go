@@ -62,13 +62,13 @@
   width: 0;
 }
 
-.booking__radio-hidden:focus + .booking__button-label {
+.booking__radio-hidden:focus+.booking__button-label {
   border-color: var(--average-color);
   background-color: #fff;
   color: black;
 }
 
-.booking__radio-hidden:checked + .booking__button-label {
+.booking__radio-hidden:checked+.booking__button-label {
   border-color: #fff;
   background-color: var(--main-color);
   color: white;
@@ -129,6 +129,12 @@
 .booking__checkbox {
   width: 25px;
   height: 25px;
+}
+
+.booking__select:hover,
+.booking__radio:hover,
+.booking__checkbox:hover {
+  outline: 1px solid black;
 }
 
 .booking__select:focus,
@@ -199,10 +205,18 @@
 
 .booking__input-text {
   display: block;
+  padding: 0 15px;
   width: 100%;
   height: 52px;
   border: 2px solid transparent;
   transition: border-color 0.2s;
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 16px;
+}
+
+.booking__input-text:hover {
+  border-color: black;
 }
 
 .booking__input-text:focus {
